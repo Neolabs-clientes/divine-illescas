@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Divine Peluqueros y Estilistas · Peluquería y estilismo en Illescas</title>
+<meta name="description" content="Divine Peluqueros y Estilistas en Illescas (Toledo). Corte, color, mechas, tratamientos y maquillaje con productos profesionales Tahe Divine. 4,7 sobre 5 con 145 reseñas. Pide cita por WhatsApp.">
+<meta name="keywords" content="peluquería Illescas, peluqueros Illescas, estilistas Illescas, color y mechas Illescas, peluquería unisex Toledo, Tahe Divine">
+<link rel="canonical" href="https://neolabs-clientes.github.io/divine-illescas/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Divine Peluqueros y Estilistas · Illescas">
+<meta property="og:description" content="Peluquería y estilismo en Illescas. Color, corte, tratamientos y productos profesionales Tahe Divine.">
+<meta property="og:image" content="https://neolabs-clientes.github.io/divine-illescas/assets/salon-01.jpg">
+<meta name="theme-color" content="#101A2E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Great+Vibes&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --rose:#E3C05A; --rose-d:#C9A227; --rose-x:#FBF2DC;
+  --gold:#C9A227; --gold-l:#E3C766;
+  --ink:#101A2E; --ink-2:#1E2E4A; --gray:#5C6779;
+  --cream:#FAF8F4; --white:#fff;
+  --f-display:'Cormorant Garamond',Georgia,serif;
+  --f-script:'Great Vibes',cursive;
+  --f-body:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  --ease:cubic-bezier(.22,.61,.36,1);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:var(--f-body);color:var(--ink);background:var(--cream);line-height:1.65;font-weight:400;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1180px,92vw);margin-inline:auto}
+.eyebrow{font-size:.68rem;letter-spacing:.34em;text-transform:uppercase;color:var(--rose-d);font-weight:500}
+h1,h2,h3{font-family:var(--f-display);font-weight:400;line-height:1.1;letter-spacing:-.01em}
+h2{font-size:clamp(2rem,4.6vw,3.4rem)}
+.script{font-family:var(--f-script);color:var(--rose-d)}
+.gold{color:var(--gold)}
+.lead{font-size:1.06rem;color:var(--ink-2);max-width:62ch}
+
+/* ---------- NAV ---------- */
+header{position:fixed;inset:0 0 auto 0;z-index:90;transition:background .45s var(--ease),box-shadow .45s var(--ease),padding .45s var(--ease);padding:18px 0}
+header.scrolled{background:rgba(251,247,245,.94);backdrop-filter:blur(14px);box-shadow:0 1px 0 rgba(20,17,15,.08);padding:10px 0}
+/* Header sobre el hero: claro, con contraste real */
+header:not(.scrolled) .nav-links a{color:rgba(251,247,245,.9);text-shadow:0 1px 12px rgba(0,0,0,.5)}
+header:not(.scrolled) .nav-links a::after{background:var(--rose)}
+header:not(.scrolled) .brand .sub{color:rgba(251,247,245,.72)}
+header:not(.scrolled) .hamburger span{background:var(--cream)}
+header:not(.scrolled) .btn-primary{background:rgba(251,247,245,.16);border-color:rgba(251,247,245,.55);color:var(--cream);backdrop-filter:blur(6px)}
+header:not(.scrolled) .btn-primary:hover{background:var(--rose-d);border-color:var(--rose-d);color:var(--cream)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:baseline;gap:10px}
+.brand .m{font-family:var(--f-script);font-size:2.1rem;color:var(--rose-d);line-height:1}
+.brand .sub{font-size:.6rem;letter-spacing:.28em;text-transform:uppercase;color:var(--gray)}
+.nav-links{display:flex;gap:26px;align-items:center}
+.nav-links a{font-size:.83rem;letter-spacing:.06em;color:var(--ink-2);position:relative;padding:4px 0}
+.nav-links a::after{content:'';position:absolute;left:0;bottom:0;width:0;height:1px;background:var(--gold);transition:width .35s var(--ease)}
+.nav-links a:hover::after{width:100%}
+.btn{display:inline-flex;align-items:center;gap:9px;padding:13px 24px;border-radius:999px;font-size:.82rem;letter-spacing:.09em;text-transform:uppercase;font-weight:500;transition:transform .3s var(--ease),box-shadow .3s var(--ease),background .3s var(--ease);border:1px solid transparent}
+.btn-primary{background:var(--ink);color:var(--cream)}
+.btn-primary:hover{background:var(--rose-d);transform:translateY(-2px);box-shadow:0 14px 30px rgba(201,122,147,.35)}
+.btn-ghost{border-color:rgba(20,17,15,.22);color:var(--ink)}
+.btn-ghost:hover{border-color:var(--gold);color:var(--gold);transform:translateY(-2px)}
+.btn-wa{background:#25D366;color:#08240f}
+.btn-wa:hover{transform:translateY(-2px);box-shadow:0 14px 30px rgba(37,211,102,.32)}
+.hamburger{display:none;flex-direction:column;gap:5px;background:none;border:0;cursor:pointer;padding:8px}
+.hamburger span{width:24px;height:1.6px;background:var(--ink);display:block;transition:.3s}
+.mobile-menu{position:fixed;inset:0;background:var(--cream);z-index:95;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:26px;transform:translateY(-100%);transition:transform .5s var(--ease)}
+.mobile-menu.open{transform:translateY(0)}
+.mobile-menu a{font-family:var(--f-display);font-size:1.9rem}
+.close-x{position:absolute;top:24px;right:24px;background:none;border:0;font-size:2rem;cursor:pointer;color:var(--ink)}
+
+/* ---------- HERO ---------- */
+.hero{position:relative;min-height:100svh;display:grid;align-items:end;overflow:hidden;color:var(--cream)}
+.hero-bg{position:absolute;inset:0}
+.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:center 30%}
+.hero-bg::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,10,9,.72) 0%,rgba(12,10,9,.45) 42%,rgba(12,10,9,.88) 100%)}
+.hero-inner{position:relative;padding:0 0 64px;z-index:2}
+.hero h1{font-size:clamp(2.7rem,7.4vw,5.6rem);letter-spacing:-.02em}
+.hero h1 em{font-style:italic;color:var(--rose)}
+.hero p{margin:18px 0 30px;max-width:52ch;color:rgba(251,247,245,.86)}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap}
+.hero-meta{display:flex;gap:26px;flex-wrap:wrap;margin-top:38px;padding-top:22px;border-top:1px solid rgba(251,247,245,.18);font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(251,247,245,.72)}
+.stars{color:var(--gold-l)}
+
+/* ---------- STRIP ---------- */
+.strip{background:var(--ink);color:var(--cream);padding:16px 0;overflow:hidden}
+.strip-track{display:flex;gap:60px;white-space:nowrap;font-size:.74rem;letter-spacing:.3em;text-transform:uppercase;color:rgba(251,247,245,.62);animation:slide 26s linear infinite}
+@keyframes slide{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* ---------- SECCIONES ---------- */
+section{padding:clamp(72px,9vw,124px) 0}
+.sec-head{margin-bottom:56px}
+.sec-head .eyebrow{display:block;margin-bottom:14px}
+.grid-2{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(28px,5vw,72px);align-items:center}
+.frame{position:relative}
+.frame img{border-radius:2px}
+.frame::after{content:'';position:absolute;inset:14px -14px -14px 14px;border:1px solid var(--gold);border-radius:2px;z-index:-1}
+
+/* Servicios */
+.services{background:var(--white)}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(255px,1fr));gap:22px}
+.card{background:var(--cream);padding:32px 26px;border:1px solid rgba(20,17,15,.07);border-radius:3px;transition:transform .4s var(--ease),box-shadow .4s var(--ease),border-color .4s var(--ease)}
+.card:hover{transform:translateY(-6px);box-shadow:0 22px 46px rgba(20,17,15,.09);border-color:rgba(201,162,39,.4)}
+.card .ico{font-size:1.5rem;margin-bottom:14px}
+.card h3{font-size:1.42rem;margin-bottom:9px}
+.card p{font-size:.92rem;color:var(--gray)}
+.card .price{margin-top:14px;font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
+
+/* Galería */
+.gal{display:grid;grid-template-columns:1.25fr .75fr;grid-template-rows:repeat(2,1fr);gap:16px}
+.gal a{overflow:hidden;border-radius:3px;display:block}
+.gal img{width:100%;height:100%;object-fit:cover;transition:transform .8s var(--ease)}
+.gal a:hover img{transform:scale(1.05)}
+.gal a:first-child{grid-row:1/3}
+
+/* Reseñas */
+.reviews{background:var(--ink);color:var(--cream)}
+.reviews .eyebrow{color:var(--rose)}
+.rev-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px}
+.rev{background:rgba(251,247,245,.05);border:1px solid rgba(251,247,245,.1);padding:30px 26px;border-radius:3px}
+.rev q{font-family:var(--f-display);font-size:1.24rem;font-style:italic;display:block;margin-bottom:18px}
+.rev .who{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(251,247,245,.6)}
+.rev .who b{color:var(--gold-l);font-weight:500}
+.score{display:flex;align-items:baseline;gap:12px;margin-bottom:34px}
+.score .n{font-family:var(--f-display);font-size:3.4rem;color:var(--gold-l);line-height:1}
+.score span{font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(251,247,245,.6)}
+
+/* Horario + contacto */
+.contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(28px,5vw,64px)}
+.hours{list-style:none;margin-top:8px}
+.hours li{display:flex;justify-content:space-between;gap:16px;padding:11px 0;border-bottom:1px dashed rgba(20,17,15,.14);font-size:.94rem}
+.hours li span:first-child{color:var(--ink-2)}
+.hours li.today{color:var(--rose-d);font-weight:500}
+.hours li.today span:first-child{color:var(--rose-d)}
+.info-blocks{margin-top:30px;display:grid;gap:16px}
+.info-blocks div{display:flex;gap:12px;font-size:.95rem}
+.info-blocks b{font-weight:500}
+form{display:grid;gap:14px;margin-top:8px}
+input,textarea,select{width:100%;padding:14px 16px;border:1px solid rgba(20,17,15,.16);background:var(--white);font-family:inherit;font-size:.94rem;border-radius:2px;color:var(--ink)}
+input:focus,textarea:focus,select:focus{outline:none;border-color:var(--rose-d);box-shadow:0 0 0 3px rgba(228,160,183,.2)}
+label{font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gray)}
+.map{border-radius:3px;overflow:hidden;border:1px solid rgba(20,17,15,.1);margin-top:26px}
+.map iframe{width:100%;height:320px;border:0;display:block}
+.cta-band{background:linear-gradient(120deg,var(--rose-x),var(--white));text-align:center;padding:clamp(56px,7vw,92px) 0}
+.cta-band h2{margin-bottom:16px}
+.cta-band p{color:var(--ink-2);margin-bottom:28px}
+footer{background:var(--ink);color:rgba(251,247,245,.68);padding:56px 0 34px;font-size:.86rem}
+.f-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:34px;margin-bottom:34px}
+footer h4{font-family:var(--f-display);color:var(--cream);font-size:1.2rem;margin-bottom:12px;font-weight:400}
+footer a:hover{color:var(--rose)}
+.f-bottom{border-top:1px solid rgba(251,247,245,.12);padding-top:22px;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:.76rem;color:rgba(251,247,245,.5)}
+.wa-float{position:fixed;right:18px;bottom:18px;z-index:80;width:56px;height:56px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 12px 30px rgba(0,0,0,.28);transition:transform .3s var(--ease)}
+.wa-float:hover{transform:scale(1.08)}
+.wa-float svg{width:30px;height:30px;fill:#08240f}
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+@media (max-width:560px){
+  .brand .sub{display:none}
+  .brand .m{font-size:1.9rem}
+  .hero-inner{padding-bottom:48px}
+  .hero h1{font-size:clamp(2.3rem,10vw,3.1rem)}
+  .hero p{font-size:.98rem}
+  .hero-cta{flex-direction:column;align-items:stretch}
+  .hero-cta .btn{justify-content:center}
+  .hero-meta{gap:12px;font-size:.7rem;flex-direction:column}
+}
+@media (max-width:900px){
+  .nav-links{display:none}
+  .hamburger{display:flex}
+  .grid-2,.contact-grid{grid-template-columns:1fr}
+  .gal{grid-template-columns:1fr;grid-template-rows:none}
+  .gal a:first-child{grid-row:auto}
+  .hero{min-height:88svh}
+}
+@media (prefers-reduced-motion:reduce){
+  .reveal{opacity:1;transform:none;transition:none}
+  .strip-track{animation:none}
+  html{scroll-behavior:auto}
+}
+
+.grid-serv{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:38px}
+.srv{background:var(--white);border:1px solid rgba(16,26,46,.09);border-radius:16px;padding:22px 20px;transition:transform .45s var(--ease),box-shadow .45s var(--ease)}
+.srv:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(16,26,46,.10)}
+.srv h3{font-family:var(--f-display);font-size:1.28rem;margin:0 0 8px;color:var(--ink)}
+.srv p{margin:0;font-size:.92rem;color:var(--gray);line-height:1.6}
+.srv i{display:block;width:34px;height:2px;background:var(--rose-d);margin-bottom:14px}
+.grid-prod{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:38px}
+.prod{border:1px solid rgba(16,26,46,.1);border-radius:16px;overflow:hidden;background:var(--white);display:flex;flex-direction:column;transition:transform .45s var(--ease),box-shadow .45s var(--ease)}
+.prod:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(16,26,46,.12)}
+.prod .ph{height:112px;background:linear-gradient(135deg,var(--ink),var(--ink-2));display:flex;align-items:center;justify-content:center;color:var(--rose);font-family:var(--f-display);font-size:1.5rem;letter-spacing:.5px}
+.prod .pb{padding:16px 16px 18px;display:flex;flex-direction:column;gap:8px;flex:1}
+.prod h3{font-size:.98rem;margin:0;font-weight:600;color:var(--ink);line-height:1.35}
+.prod small{color:var(--gray);font-size:.82rem}
+.prod a{margin-top:auto;font-size:.85rem;font-weight:600;color:var(--rose-d);text-decoration:none;border-bottom:1px solid transparent}
+.prod a:hover{border-color:var(--rose-d)}
+.prod-cta{display:flex;flex-direction:column;align-items:center;gap:10px;margin-top:34px;text-align:center}
+.prod-note{font-size:.85rem;color:var(--gray)}
+.grid-op{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:38px}
+.op{margin:0;background:var(--white);border:1px solid rgba(16,26,46,.09);border-radius:16px;padding:24px;display:flex;flex-direction:column;gap:12px}
+.op p{margin:0;font-size:.95rem;line-height:1.68;color:var(--ink-2);font-style:italic}
+.op footer{font-size:.85rem;color:var(--gray);font-weight:600;letter-spacing:.2px}
+.op .stars{color:var(--rose-d);letter-spacing:2px;font-size:.95rem}
+.op-link{text-align:center;margin-top:28px}
+.contact-list{display:flex;flex-direction:column;gap:12px;margin:22px 0 26px}
+.contact-list a{display:flex;justify-content:space-between;gap:14px;align-items:baseline;text-decoration:none;border-bottom:1px solid rgba(16,26,46,.1);padding-bottom:10px}
+.contact-list strong{color:var(--ink);font-size:.9rem}
+.contact-list span{color:var(--gray);font-size:.92rem;text-align:right}
+.contact-list a:hover span{color:var(--rose-d)}
+.h3{font-family:var(--f-display);font-size:1.35rem;margin:0 0 12px;color:var(--ink)}
+.col-map{min-height:420px}
+.col-map iframe{width:100%;height:100%;min-height:420px;border:0;border-radius:16px;filter:saturate(.92)}
+.hero-rating{display:flex;align-items:center;gap:10px;margin-top:26px;color:#fff;font-size:.92rem}
+.hero-rating strong{font-family:var(--f-display);font-size:1.6rem;color:var(--rose)}
+.hero-rating .stars{color:var(--rose);letter-spacing:2px}
+.foot-in{display:flex;justify-content:space-between;gap:26px;flex-wrap:wrap}
+.foot-brand .m{font-family:var(--f-script);font-size:1.9rem;color:var(--rose);display:block;line-height:1}
+.foot-brand small{display:block;font-size:.72rem;letter-spacing:.28em;text-transform:uppercase;opacity:.65;margin-top:4px}
+.foot-brand p{margin:12px 0 0;font-size:.9rem;opacity:.75}
+.foot-links{display:flex;gap:16px;flex-wrap:wrap;align-items:flex-start}
+.foot-bottom{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-top:26px;padding-top:18px;border-top:1px solid rgba(255,255,255,.12);font-size:.82rem;opacity:.7}
+.hours tr.hoy td{color:var(--rose);font-weight:600}
+@media(max-width:900px){.grid-serv,.grid-prod{grid-template-columns:repeat(2,1fr)}.grid-op{grid-template-columns:1fr}}
+@media(max-width:560px){.grid-serv,.grid-prod{grid-template-columns:1fr}.foot-in{flex-direction:column}}
+</style>
+</head>
+<body>
+<header id="hdr">
+  <div class="wrap nav">
+    <a href="#" class="logo"><span class="m">Divine</span><small>peluqueros y estilistas</small></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#salon">El salón</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#productos">Productos</a>
+      <a href="#trabajos">Trabajos</a>
+      <a href="#opiniones">Opiniones</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <a class="btn btn-primary" href="https://wa.me/34695909041?text=Hola%2C%20quiero%20pedir%20cita%20en%20Divine%20Peluqueros" target="_blank" rel="noopener">Pedir cita</a>
+    <button class="hamburger" id="hamb" aria-label="Menú"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-bg"><img src="assets/salon-01.jpg" alt="Fachada de Divine Peluqueros y Estilistas en Illescas"></div>
+  <div class="wrap hero-inner">
+    <span class="eyebrow">Illescas · Toledo</span>
+    <h1>Tu pelo, en las<br><em>mejores manos</em></h1>
+    <p>Peluquería y estilismo unisex en Illescas. Color, corte y tratamientos con productos profesionales Tahe Divine.</p>
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="https://wa.me/34695909041?text=Hola%2C%20quiero%20pedir%20cita%20en%20Divine%20Peluqueros" target="_blank" rel="noopener">Pedir cita por WhatsApp</a>
+      <a class="btn btn-ghost" href="#servicios">Ver servicios</a>
+    </div>
+    <div class="hero-rating">
+      <strong>4,7</strong>
+      <span class="stars">★★★★★</span>
+      <span>145 reseñas en Google</span>
+    </div>
+  </div>
+</section>
+
+<div class="strip">
+  <div class="wrap strip-in">
+    <span>Unisex</span><i></i><span>Color y mechas</span><i></i><span>Tratamientos</span><i></i><span>Maquillaje</span><i></i><span>Productos Tahe Divine</span>
+  </div>
+</div>
+
+<section id="salon" class="sec">
+  <div class="wrap two">
+    <div class="col-img reveal"><img src="assets/salon-08.jpg" alt="Trabajos de color en Divine Peluqueros" loading="lazy"></div>
+    <div class="col-txt reveal">
+      <span class="eyebrow">El salón</span>
+      <h2>Un salón en el que se cuida cada detalle</h2>
+      <p>En <strong>Divine Peluqueros y Estilistas</strong> trabajamos el color, el corte y el tratamiento del cabello con formación continua y producto profesional. Da igual si vienes a un cambio radical o a mantener tu estilo: salimos a que salgas contenta.</p>
+      <p>Somos un salón <strong>unisex</strong>: caballero, señora, niñas y niños. Y trabajamos con la gama profesional <strong>Tahe Divine</strong>, la misma que puedes llevar a casa.</p>
+      <ul class="ticks">
+        <li>Diagnóstico del cabello antes de tocar el color</li>
+        <li>Color y mechas con producto profesional</li>
+        <li>Tratamientos reparadores y de hidratación</li>
+        <li>Productos que puedes comprar para casa</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="servicios" class="sec alt">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="eyebrow">Servicios</span>
+      <h2>Lo que hacemos</h2>
+      <p>Presupuesto sin compromiso. Dinos qué necesitas y te asesoramos antes de empezar.</p>
+    </div>
+    <div class="grid-serv">
+      <article class="srv reveal"><i></i><h3>Corte y peinado</h3><p>Corte a tijera o máquina, lavado y peinado con acabado natural o de pasarela.</p></article>
+      <article class="srv reveal"><i></i><h3>Color y mechas</h3><p>Coloración, rubios, balayage y mechas. Diagnosticamos antes de tocar el pelo.</p></article>
+      <article class="srv reveal"><i></i><h3>Alisados y tratamientos</h3><p>Alisados, botox capilar y tratamientos de reconstrucción para pelo castigado.</p></article>
+      <article class="srv reveal"><i></i><h3>Tratamientos reparadores</h3><p>Gama profesional K-Glicolic y Pure Peptides para hidratar y frenar la rotura.</p></article>
+      <article class="srv reveal"><i></i><h3>Peinados de evento</h3><p>Bodas, bautizos y celebraciones. Recogidos y ondas que aguantan todo el día.</p></article>
+      <article class="srv reveal"><i></i><h3>Maquillaje</h3><p>Maquillaje profesional para eventos y para el día a día.</p></article>
+      <article class="srv reveal"><i></i><h3>Corte de caballero</h3><p>Cortes masculinos, degradados y arreglo de barba en salón unisex.</p></article>
+      <article class="srv reveal"><i></i><h3>Cejas y depilación facial</h3><p>Diseño de cejas y depilación facial con cera y pinza.</p></article>
+    </div>
+  </div>
+</section>
+<section id="productos" class="sec">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="eyebrow">Productos Divine</span>
+      <h2>El producto que usamos, ahora en tu casa</h2>
+      <p>Trabajamos con la gama profesional <strong>Tahe Divine</strong>. Puedes comprarla en la tienda online oficial y recogerla en el salón, o pedírnosla y te la traemos.</p>
+    </div>
+    <div class="grid-prod">
+      <article class="prod reveal"><div class="ph">Divine</div><div class="pb"><h3>Champú regenerador anticaída</h3><small>Con exosomas · gama Fitoxil</small><a href="https://divine.tahe.es/es-es/" target="_blank" rel="noopener">Ver en la tienda</a></div></article>
+      <article class="prod reveal"><div class="ph">Divine</div><div class="pb"><h3>Densificador capilar Density</h3><small>Peptide T98 · más densidad y volumen</small><a href="https://divine.tahe.es/es-es/" target="_blank" rel="noopener">Ver en la tienda</a></div></article>
+      <article class="prod reveal"><div class="ph">Divine</div><div class="pb"><h3>Tinte Lumière Express</h3><small>Color profesional de uso en salón</small><a href="https://divine.tahe.es/es-es/" target="_blank" rel="noopener">Ver en la tienda</a></div></article>
+      <article class="prod reveal"><div class="ph">Divine</div><div class="pb"><h3>Mascarilla hidronutritiva</h3><small>Con AHAs · gama K-Glicolic</small><a href="https://divine.tahe.es/es-es/" target="_blank" rel="noopener">Ver en la tienda</a></div></article>
+      <article class="prod reveal"><div class="ph">Divine</div><div class="pb"><h3>Tratamiento instantáneo antirrotura</h3><small>Pure Peptides Instant Nature</small><a href="https://divine.tahe.es/es-es/" target="_blank" rel="noopener">Ver en la tienda</a></div></article>
+      <article class="prod reveal"><div class="ph">Divine</div><div class="pb"><h3>Sérum de pestañas EyeLash</h3><small>Peptide T98 Eyes</small><a href="https://divine.tahe.es/es-es/" target="_blank" rel="noopener">Ver en la tienda</a></div></article>
+      <article class="prod reveal"><div class="ph">Divine</div><div class="pb"><h3>Maquillaje profesional</h3><small>Base Perfect Foundation y corrector</small><a href="https://divine.tahe.es/es-es/" target="_blank" rel="noopener">Ver en la tienda</a></div></article>
+      <article class="prod reveal"><div class="ph">Divine</div><div class="pb"><h3>Estilismo y acabado</h3><small>Lacas, espumas y cremas Styling Lab</small><a href="https://divine.tahe.es/es-es/" target="_blank" rel="noopener">Ver en la tienda</a></div></article>
+    </div>
+    <div class="prod-cta reveal">
+      <a class="btn btn-primary" href="https://divine.tahe.es/es-es/" target="_blank" rel="noopener">Ver toda la tienda online</a>
+      <span class="prod-note">Compra en la tienda oficial Tahe Divine · También disponible en el salón</span>
+    </div>
+  </div>
+</section>
+
+<section id="trabajos" class="sec alt">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="eyebrow">Trabajos</span>
+      <h2>Lo que sale de nuestras manos</h2>
+    </div>
+    <div class="gal">
+      <img src="assets/salon-03.jpg" alt="Color y mechas" loading="lazy" class="reveal">
+      <img src="assets/salon-04.jpg" alt="Detalle de color" loading="lazy" class="reveal">
+      <img src="assets/salon-07.jpg" alt="Peinado y tratamiento" loading="lazy" class="reveal">
+      <img src="assets/salon-09.jpg" alt="Trabajos de peluquería" loading="lazy" class="reveal">
+      <img src="assets/salon-10.jpg" alt="Antes y después" loading="lazy" class="reveal">
+      <img src="assets/salon-06.jpg" alt="Cuidado del cabello" loading="lazy" class="reveal">
+    </div>
+  </div>
+</section>
+
+<section id="opiniones" class="sec">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="eyebrow">Opiniones</span>
+      <h2>4,7 sobre 5 en Google</h2>
+      <p>Con 145 reseñas. Estas son algunas de las que nos dejan nuestras clientas.</p>
+    </div>
+    <div class="grid-op">
+      <blockquote class="op reveal">
+        <div class="stars">★★★★★</div>
+        <p>«El trato es perfecto. Trabajan muy bien. Y siempre salgo contenta con el color y el corte de pelo. Así da gusto ir.»</p>
+        <footer>Isabel Díaz · Google</footer>
+      </blockquote>
+      <blockquote class="op reveal">
+        <div class="stars">★★★★★</div>
+        <p>«Gracias Sara por seguir siendo la misma persona que eras, y Javier igual. Súper contenta con vuestro trabajo. Recomendable al cien por cien.»</p>
+        <footer>Begoña Mediavilla · Google</footer>
+      </blockquote>
+      <blockquote class="op reveal">
+        <div class="stars">★★★★★</div>
+        <p>«Mi cabello es fino y delicado y lo tratan de maravilla, mejorado y totalmente restablecido. El ambiente es agradable y son profesionales en continuo aprendizaje.»</p>
+        <footer>Yolanda Gómez · Google</footer>
+      </blockquote>
+    </div>
+    <div class="op-link reveal"><a class="btn btn-ghost" href="https://maps.google.com/maps/place//data=!4m2!3m1!1s0xd41f0e2e6d45cbf:0x79cefff0ab1e117e?entry=s&sa=X&hl=es" target="_blank" rel="noopener">Ver las 145 reseñas en Google</a></div>
+  </div>
+</section>
+
+<section id="contacto" class="sec alt">
+  <div class="wrap two">
+    <div class="col-txt reveal">
+      <span class="eyebrow">Contacto</span>
+      <h2>Pide tu cita</h2>
+      <p>Escríbenos por WhatsApp con el día que te viene bien y te confirmamos. También puedes llamarnos o pasarte por el salón.</p>
+      <div class="contact-list">
+        <a href="https://wa.me/34695909041?text=Hola%2C%20quiero%20pedir%20cita%20en%20Divine%20Peluqueros" target="_blank" rel="noopener"><strong>WhatsApp</strong><span>695 90 90 41</span></a>
+        <a href="tel:+34925512458"><strong>Teléfono</strong><span>925 51 24 58</span></a>
+        <a href="https://maps.google.com/maps/place//data=!4m2!3m1!1s0xd41f0e2e6d45cbf:0x79cefff0ab1e117e?entry=s&sa=X&hl=es" target="_blank" rel="noopener"><strong>Dirección</strong><span>C. Cauce, 4 · 45200 Illescas, Toledo</span></a>
+      </div>
+      <h3 class="h3">Horario</h3>
+      <table class="hours">
+        <tr data-d="1"><td>Lunes</td><td>15:00 – 19:00</td></tr>
+        <tr data-d="2"><td>Martes</td><td>9:30 – 14:00 · 15:30 – 19:30</td></tr>
+        <tr data-d="3"><td>Miércoles</td><td>9:30 – 14:00 · 15:30 – 19:30</td></tr>
+        <tr data-d="4"><td>Jueves</td><td>9:30 – 14:00 · 15:30 – 19:30</td></tr>
+        <tr data-d="5"><td>Viernes</td><td>9:30 – 14:00 · 15:30 – 19:30</td></tr>
+        <tr data-d="6"><td>Sábado</td><td>9:30 – 14:00</td></tr>
+        <tr data-d="0"><td>Domingo</td><td>Cerrado</td></tr>
+      </table>
+      <form class="form" id="citaForm">
+        <div class="row2">
+          <input type="text" id="fNombre" placeholder="Tu nombre" required>
+          <input type="tel" id="fTel" placeholder="Tu teléfono" required>
+        </div>
+        <select id="fServicio">
+          <option>Corte y peinado</option>
+          <option>Color o mechas</option>
+          <option>Tratamiento capilar</option>
+          <option>Peinado de evento</option>
+          <option>Maquillaje</option>
+          <option>Corte de caballero</option>
+          <option>Otra cosa</option>
+        </select>
+        <input type="text" id="fDia" placeholder="¿Qué día y a qué hora te viene bien?">
+        <button type="submit" class="btn btn-primary">Enviar por WhatsApp</button>
+        <small>Se abrirá WhatsApp con tu mensaje escrito. No guardamos tus datos.</small>
+      </form>
+    </div>
+    <div class="col-map reveal">
+      <iframe src="https://www.google.com/maps?q=C.+Cauce+4,+45200+Illescas,+Toledo&hl=es&output=embed" loading="lazy" title="Mapa Divine Peluqueros y Estilistas"></iframe>
+    </div>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <div class="foot-brand">
+      <span class="m">Divine</span>
+      <small>peluqueros y estilistas</small>
+      <p>C. Cauce, 4 · 45200 Illescas, Toledo</p>
+    </div>
+    <nav class="foot-links">
+      <a href="https://wa.me/34695909041" target="_blank" rel="noopener">WhatsApp</a>
+      <a href="tel:+34925512458">925 51 24 58</a>
+      <a href="aviso-legal.html">Aviso legal</a>
+      <a href="politica-privacidad.html">Privacidad</a>
+      <a href="politica-cookies.html">Cookies</a>
+      <a href="declaracion-accesibilidad.html">Accesibilidad</a>
+    </nav>
+  </div>
+  <div class="wrap foot-bottom">
+    <span>© <span id="year"></span> Divine Peluqueros y Estilistas</span>
+    <span>Diseño web: NEO Labs</span>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/34695909041?text=Hola%2C%20quiero%20pedir%20cita%20en%20Divine%20Peluqueros" target="_blank" rel="noopener" aria-label="WhatsApp">WhatsApp</a>
+
+<script>
+const hdr = document.getElementById('hdr');
+addEventListener('scroll', () => hdr.classList.toggle('scrolled', scrollY > 40), {passive:true});
+const hamb = document.getElementById('hamb'), nl = document.getElementById('navLinks');
+hamb && hamb.addEventListener('click', () => { nl.classList.toggle('open'); hamb.classList.toggle('x'); });
+document.querySelectorAll('#navLinks a').forEach(a => a.addEventListener('click', () => { nl.classList.remove('open'); hamb.classList.remove('x'); }));
+const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), {threshold:.12});
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+const d = new Date().getDay();
+const row = document.querySelector('.hours tr[data-d="' + d + '"]');
+row && row.classList.add('hoy');
+document.getElementById('year').textContent = new Date().getFullYear();
+document.getElementById('citaForm').addEventListener('submit', e => {
+  e.preventDefault();
+  const n = document.getElementById('fNombre').value.trim();
+  const t = document.getElementById('fTel').value.trim();
+  const s = document.getElementById('fServicio').value;
+  const dia = document.getElementById('fDia').value.trim();
+  const msg = 'Hola, soy ' + n + '. Quiero pedir cita en Divine. Teléfono: ' + t + '. Servicio: ' + s + (dia ? '. Me viene bien: ' + dia : '') + '.';
+  window.open('https://wa.me/34695909041?text=' + encodeURIComponent(msg), '_blank');
+});
+</script>
+</body>
+</html>
